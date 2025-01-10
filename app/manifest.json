@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "It's Dream Time",
+  "version": "1.2",
+  "description": "Enforce your sleep schedule by blocking browsing during specified hours. Sleep better, browse less.",
+  "icons": {
+    "48": "icon.svg"
+  },
+  "permissions": [
+    "tabs",
+    "storage",
+    "alarms",
+    "webNavigation"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.svg"
+  },
+  "applications": {
+    "gecko": {
+      "id": "its-dream-time@github.com",
+      "strict_min_version": "58.0"
+    }
+  }
+}

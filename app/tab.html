@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Time to Sleep</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #c8dc71;
+      --gradient-color: linear-gradient(45deg, #2c1a47, #5d3f6e, #b04b8d, #6a4c9c, #a1a6d0);
+      --text-gradient: linear-gradient(25deg, #eee, #333);
+      --overlay-color: rgba(0, 0, 0, 0.8);
+      --text-color: #dbd56e;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: 'Roboto', sans-serif;
+      background-color: #16181b;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      width: 100%;
+      padding: 20px;
+      position: relative;
+    }
+
+    .gradient {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: var(--gradient-color);
+      background-size: 300% 300%;
+      animation: gradientAnimation 20s ease infinite;
+      z-index: 1;
+    }
+
+    .gradient::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: var(--overlay-color);
+      z-index: 2;
+    }
+
+    h1 {
+      color: var(--text-color);
+      background: var(--text-gradient);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: clamp(1.25rem, 5vw, 2rem); /* Responsive font size */
+      font-weight: 500;
+      text-align: center;
+      max-width: 90%;
+      line-height: 1.5;
+      z-index: 3;
+    }
+
+    @keyframes gradientAnimation {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="gradient"></div>
+  <div class="container">
+    <h1 class="type">
+      End of day! Your work is saved. Sleep peacefully!
+    </h1>
+  </div>
+</body>
+</html>
