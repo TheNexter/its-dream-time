@@ -1,12 +1,11 @@
-![banner](https://github.com/user-attachments/assets/a980d2ab-fa4f-4166-9cd2-c292f29bde5d)
-
 # 😴 It's Dream Time
 
 **It's Dream Time** is a Firefox extension designed to help you embrace a healthier sleep schedule by enforcing a "no browsing" policy during your specified sleep hours. Simply set your sleep and wake times, and let Dream Time block distracting websites, replacing them with a calming tab to remind you to rest.
 
 ## 🚀 Installation
 
-[![Firefox Extension](https://github.com/user-attachments/assets/b65f50b2-7efc-4f81-b76d-80c5e996e866)](https://addons.mozilla.org/fr/firefox/addon/it-s-dream-time/)
+[Firefox Extension](https://addons.mozilla.org/fr/firefox/addon/it-s-dream-time/)
+
 
 
 ## 📋 Features
